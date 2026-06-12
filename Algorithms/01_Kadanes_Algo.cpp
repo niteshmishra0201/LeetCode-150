@@ -36,3 +36,12 @@ int main() {
 //     maxSum = max(maxSum, currentSum)
 //     if currentSum < 0:
 //         currentSum = 0   ← throw away negative running sum
+
+
+// Interviewer can also ask some follow up Questions LIke Below(notes ans answer will update Soon)
+
+
+// Q1. How do you also return the actual subarray (start and end indices), not just the sum?
+// Q2. What if the array is circular — meaning you can wrap around from the end back to the beginning?
+// Q3. What if you needed the maximum product subarray instead of sum?
+// Q4. What is the divide and conquer approach to this problem and what is its time complexity?
