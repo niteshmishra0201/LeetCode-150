@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int BinarySearch(vector<int>& arr , int low , int high , int target){
+    while(low<=high){
+        int mid = low + (high-low)/2;
+        if(arr[mid]==target){
+            return mid;
+
+        }else if(arr[mid]<target){
+            low = mid+1;
+        
+        }else{
+            high = mid -1;
+        }
+    }
+    return -1;
+}
+
+// Main Function: Search in Infinite Sorted Array
+
+int searchInInfiniteArray(vector<int>& arr, int target){
+
+      // ── step 1: Find the window using Exponential Search
+      int low =0;
+      int high = 1;
+
+    //   step-2 keep Doubling the size of window until arr[high] >= target  (target is within or before high)
+
+      while (arr[high] < target)
+      {
+          int newLow = high + 1; 
+          high = high * 2 + 1;   
+          low = newLow;
+      }
+
+      //step-3 now apply Binary search in found window
+
+       return BinarySearch(arr, low, high, target);
+}
