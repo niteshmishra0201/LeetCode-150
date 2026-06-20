@@ -35,7 +35,7 @@ int main() {
     cout << maxNumberOfBalloons("loonbalxballpoon") << "\n"; // Expected: 2
 
     // Test 3: missing characters entirely
-    cout << maxNumberOfBalloons("leetcode") << "\n";          // Expected: 0
+    cout << maxNumberOfBalloons("leetcode") << "\n";          // Expected:0
 
     return 0;
 }
