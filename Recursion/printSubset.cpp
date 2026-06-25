@@ -9,6 +9,7 @@ void printSubset(int arr[] , int index , int size , vector<int>& current){
         cout<< "{";
         for(int x : current) cout<< x << endl;
         cout << "}";
+        return;
     }
 
     //choice One - Include the all Element 
