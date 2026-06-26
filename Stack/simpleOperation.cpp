@@ -21,4 +21,13 @@ int main(){
     cout<<"after pop"<<st.top()<<endl;
 
 
+    //printing a stack
+
+    while (!st.empty())
+    {
+        cout<<st.top()<<endl;
+    }
+    
+
+
 }
