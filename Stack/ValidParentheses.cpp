@@ -28,4 +28,6 @@ bool isValid(string s){
 int main(){
     cout<< isValid("({{[]}})");
     cout<< isValid("{][(]}");
+
+    return 0;
 }
