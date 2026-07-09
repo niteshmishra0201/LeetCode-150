@@ -10,7 +10,8 @@ int fibNumber(int n){
 }
 
 int main(){
-    fibNumber(5);
+    int result = fibNumber(10);
+    cout<<result;
 
     return 0;
 }
